@@ -29,4 +29,6 @@ Route::get('/approve', 'ApproveController@index')->name('approve');
 Route::get('/approve/{transaction}', 'ApproveController@approve')->name('approve.store');
 Route::get('/reject/{transaction}', 'ApproveController@reject')->name('reject');
 
+Route::get('/breweries', 'ApiController@index')->name('breweries');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

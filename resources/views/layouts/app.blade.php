@@ -50,6 +50,9 @@
                             <a class="nav-link" href="/approve">Approval Manager</a>
                         </li>
                         @endif
+                        <li class="nav-item">
+                            <a class="nav-link" href="/breweries">Breweries</a>
+                        </li>
                     </ul>
                     @endguest
 
