@@ -19,7 +19,7 @@ class CreateTransactionBalancesTable extends Migration
             $table->unsignedBigInteger('debit')->default(0);
             $table->unsignedBigInteger('credit')->default(0);
             $table->tinyInteger('status')->default(0);
-            $table->unsignedBigInteger('approved_by')->nullable();
+            $table->unsignedBigInteger('action_by')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('user_id')->references('id')->on('users');

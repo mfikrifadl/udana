@@ -25,4 +25,8 @@ Route::get('/withdraw', 'TransactionController@withdraw')->name('withdraw');
 Route::post('/withdraw', 'TransactionController@store_withdraw')->name('withdraw.store');
 Route::post('/topup', 'TransactionController@store_balance')->name('topup.store');
 
+Route::get('/approve', 'ApproveController@index')->name('approve');
+Route::get('/approve/{transaction}', 'ApproveController@approve')->name('approve.store');
+Route::get('/reject/{transaction}', 'ApproveController@reject')->name('reject');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

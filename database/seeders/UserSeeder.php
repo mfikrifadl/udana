@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
             'name' => 'fikri',
             'email' => 'fikri@fikri.com',
             'password' => Hash::make('fikrifikri'),
-            'role_id' => 1,
+            'role_id' => 2,
         ]);
     }
 }
