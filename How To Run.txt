@@ -1,0 +1,6 @@
+1. git clone git@github.com:mfikrifadl/udana.git
+2. duplicate .env.example rename to .env
+3. composer install
+4. npm install
+5. npm run dev
+6. php artisan serve
